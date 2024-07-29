@@ -30,7 +30,7 @@ export default function ProductComp() {
               <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                 <p className="text-tiny uppercase font-bold">{item.title}</p>
                 <small className="text-default-500">
-                  {item.description.slice(0, 250)}
+                  {item.description.slice(0, 200)}
                 </small>
                 <h4 className="font-bold text-large">${item.price}</h4>
                 <div className="flex justify-center">
