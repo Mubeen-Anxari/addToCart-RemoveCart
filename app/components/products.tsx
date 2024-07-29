@@ -1,11 +1,9 @@
 "use client";
 import React, { useEffect, lazy, Suspense } from "react";
 import { useAppDispatch, useAppSelector } from "../hook/hook";
-import { addToCart, getProducts } from "../redux/slice";
+import { getProducts } from "../redux/slice";
 import Link from "next/link";
 import { FaCartShopping } from "react-icons/fa6";
-// import ProductComp from "./productComp";
-
 export default function Products() {
   const cartSlice = useAppSelector((state) => state.cart);
   const dispatch = useAppDispatch();

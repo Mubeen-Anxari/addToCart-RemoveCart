@@ -2,7 +2,6 @@
 import { useAppDispatch, useAppSelector } from "../hook/hook";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 import { removeCart } from "../redux/slice";
-import Link from "next/link";
 export default function CartComp() {
   const cartSlice = useAppSelector((state) => state.cart);
   const dispatch = useAppDispatch();
@@ -10,7 +9,7 @@ export default function CartComp() {
   return (
     <div>
       <div className=" pt-4 bg-cyan-900 grid py-10 grid-cols-1 gap-6 lg:grid-cols-3">
-        {cartSlice?.cart?.map((item) => {
+        {cartSlice?.cart?.map((item:any) => {
           return (
             <div>
               <Card className="py-4 flex gap-2 justify-center items-center bg-white h-full lg:h-[550px]  rounded-lg  w-[450px]">
