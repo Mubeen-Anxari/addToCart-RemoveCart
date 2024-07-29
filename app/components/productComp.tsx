@@ -17,7 +17,7 @@ export default function ProductComp() {
       <div className="pt-4 bg-cyan-900 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {cartSlice?.products?.map((item:any) => (
           <div key={item.id}>
-            <Card className="py-4 flex gap-2 justify-center items-center bg-white h-full lg:h-[550px] rounded-lg w-[450px]">
+            <Card className="py-4 flex gap-2 justify-center items-center bg-white h-full lg:h-[570px] rounded-lg w-[450px]">
               <CardBody className="overflow-visible py-2">
                 <Image
                   alt="Card background"
